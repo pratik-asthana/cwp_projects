@@ -1,0 +1,10 @@
+---
+Name: myroutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    'skippitdbtest/$token/': 'SkippitdbTestController'
+   

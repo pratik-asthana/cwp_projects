@@ -1,0 +1,77 @@
+[2018-07-23 20:13:05] State transitioned from "New" to "Approved"
+[2018-07-23 20:13:11] State transitioned from "Approved" to "Queued"
+[2018-07-23 20:13:11] Deploy to digitria:prod initiated by Sachin Khosla (sachin@digimantra.com), with IP address 202.164.56.228
+[2018-07-23 20:13:11] Deploy queued as job 7a9f038cfbb3be07f9711cfd63856ba5
+[2018-07-23 20:13:11] State transitioned from "Queued" to "Deploying"
+[2018-07-23 20:13:11] Backing up existing data
+[2018-07-23 20:13:11] Running command: /var/www/rainforestnew/www/bin/rainforest sspak:download 'trial2' 'digitria' 'prod' --mode 'db' --bucket 'silverstripe-rainforest-snapshot-us-west-2' --output-path '/var/www/mysite/shared/assets/transfers/digitria/prod/transfer-14836//digitria-prod-db-20180723-1545e3673c204d77a8a56e444b7d6b551d7d8aca.sspak' --region 'us-west-2' --role-arn 'arn:aws:iam::839025751174:role/trial2-digitria-prod-DeployRole-1E9H1SDGRLHWP' --vhost 'mysite' --verbose --no-progress
+[2018-07-23 20:13:14] Request sent to queue trial2-digitria-prod-stack
+[2018-07-23 20:13:14] Waiting for response from queue trial2-digitria-prod-done (timeout: 60min)
+[2018-07-23 20:13:24] Downloading 2018-07-23_20-13-20.sspak to /var/www/mysite/shared/assets/transfers/digitria/prod/transfer-14836//digitria-prod-db-20180723-1545e3673c204d77a8a56e444b7d6b551d7d8aca.sspak
+[2018-07-23 20:13:25] Starting download of a 20.0KB snapshot
+[2018-07-23 20:13:26] Downloaded 20.0KB of 20.0KB at 20.0KB/s
+[2018-07-23 20:13:26] Successfully downloaded to /var/www/mysite/shared/assets/transfers/digitria/prod/transfer-14836//digitria-prod-db-20180723-1545e3673c204d77a8a56e444b7d6b551d7d8aca.sspak
+[2018-07-23 20:13:28] Creating sspak file done: http://platform.silverstripe.com/assets/transfers/digitria/prod/transfer-14836/digitria-prod-db-20180723-1545e3673c204d77a8a56e444b7d6b551d7d8aca.sspak
+[2018-07-23 20:13:28] Full deploy "66599d8352678dd4ec49e13f3696678d90b8b835" to "digitria:prod"
+[2018-07-23 20:13:28] Running command: /var/www/rainforestnew/www/bin/rainforest deploy:bake 'trial2' 'digitria' 'prod' --site-repo '/var/www/mysite/shared/deploynaut-resources/git/digitria' --site-sha '66599d8352678dd4ec49e13f3696678d90b8b835' --manifest-sha '3.19.0' --manifest-template 'solo' --manifest-identity '/var/www/mysite/shared/deploynaut-resources/manifestkeys/rainforest' --role-arn 'arn:aws:iam::839025751174:role/trial2-digitria-prod-DeployRole-1E9H1SDGRLHWP' --site-identity '/var/www/mysite/shared/deploynaut-resources/gitkeys/digitria/digitria' --verbose --no-progress --yes --region 'us-west-2' --config-file '/tmp/rainforest-config5fxyoh'
+[2018-07-23 20:13:31] Cloning site repository to /tmp/rainforest/fa5e57dbb90946a79418854bee7c66d57fbe28e4-site
+[2018-07-23 20:13:31] Checking out repository /var/www/mysite/shared/deploynaut-resources/git/digitria at revision 66599d8352678dd4ec49e13f3696678d90b8b835
+[2018-07-23 20:13:31] Running build script in /tmp/rainforest/fa5e57dbb90946a79418854bee7c66d57fbe28e4-site...
+[2018-07-23 20:13:31] OUT > Loading composer repositories with package information
+[2018-07-23 20:13:31] OUT > Installing dependencies from lock file
+[2018-07-23 20:13:31] OUT > Package operations: 14 installs, 0 updates, 0 removals
+[2018-07-23 20:13:31] OUT >   - Installing composer/installers (dev-master 89d77bf):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing doctrine/cache (dev-master fe68e4f):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing psr/http-message (dev-master 85d6369):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing guzzlehttp/psr7 (1.3.1):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing guzzlehttp/promises (1.2.0):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing guzzlehttp/guzzle (dev-master 158c171):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing mtdowling/cron-expression (v1.0.4):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing mtdowling/jmespath.php (2.3.0):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing silverstripe/framework (3.1.8):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:31] OUT >   - Installing silverstripe-themes/simple (dev-master c8f07c5):
+[2018-07-23 20:13:31] OUT > Loading from cache
+[2018-07-23 20:13:32] OUT >   - Installing silverstripe/cms (3.1.8):
+[2018-07-23 20:13:32] OUT > Loading from cache
+[2018-07-23 20:13:32] OUT >   - Installing silverstripe/crontask (v1.1.0):
+[2018-07-23 20:13:32] OUT > Loading from cache
+[2018-07-23 20:13:32] OUT >   - Installing aws/aws-sdk-php (3.18.32):
+[2018-07-23 20:13:32] OUT > Loading from cache
+[2018-07-23 20:13:32] OUT >   - Installing silverstripe/dynamodb (2.0.1):
+[2018-07-23 20:13:32] OUT > Loading from cache
+[2018-07-23 20:13:33] OUT > Generating optimized autoload files
+[2018-07-23 20:13:33] OUT > SilverStripe 3 detected. Skipping module exposure.
+[2018-07-23 20:13:33] * Manifest version: 3.19.0 (48ae7b7a2ea1bf1dbd0375184102986ad1f3e134)
+[2018-07-23 20:13:33] * Base image: debian-jessie (ami-e1621999)
+[2018-07-23 20:13:33] * Config revision: bf5d947989521a92c2a20474d6ab806abe02920e
+[2018-07-23 20:13:35] Checking account instance limits...
+[2018-07-23 20:13:42] Cloning manifest...
+[2018-07-23 20:13:44] Checking out repository ssh://git@code.platform.silverstripe.com:222/aws/aws-projects.git at revision 48ae7b7a2ea1bf1dbd0375184102986ad1f3e134
+[2018-07-23 20:13:44] Running build script in /tmp/rainforest/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest...
+[2018-07-23 20:13:44] OUT > Loading composer repositories with package information
+[2018-07-23 20:13:44] OUT > Installing dependencies from lock file
+[2018-07-23 20:13:44] OUT > Nothing to install or update
+[2018-07-23 20:13:44] OUT > Generating optimized autoload files
+[2018-07-23 20:13:44] OUT > SilverStripe 3 detected. Skipping module exposure.
+[2018-07-23 20:13:44] Transforming repositories...
+[2018-07-23 20:13:44] Copying template manifest files from /tmp/rainforest/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/template/solo to /tmp/rainforest-filtered/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/env/single
+[2018-07-23 20:13:44] Copying manifest globals from /tmp/rainforest/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/global to /tmp/rainforest-filtered/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/global
+[2018-07-23 20:13:44] Building the environment configuration:
+[2018-07-23 20:13:44] * Using template config /tmp/rainforest/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/template/solo/config.yaml as a base
+[2018-07-23 20:13:44] * Merging /tmp/rainforest-config5fxyoh from the command line
+[2018-07-23 20:13:44] Finished processing manifest at /tmp/rainforest-filtered/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b
+[2018-07-23 20:13:44] Parameters compiled into /tmp/rainforest-filtered/8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b/manifest/env/single/config.yaml
+[2018-07-23 20:13:46] Uploading payload to S3...
+[2018-07-23 20:13:50] Payload uploaded to S3 bucket: s3://silverstripe-rainforest-deploy-us-west-2/trial2-digitria-prod/payload-8c5939cc9f5a9fa1b0fcfda482080d74c0ff950b.tgz
+[2018-07-23 20:13:51] Waiting for stack trial2-digitria-prod-bake-76deaf1 to be built...
+[2018-07-23 20:15:32] Stack trial2-digitria-prod-bake-76deaf1 successfully built.
+[2018-07-23 20:15:33] Waiting for image ami-c1b1efb9 to complete... (timeout: 30min)
